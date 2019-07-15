@@ -13,7 +13,7 @@ const getAll = () => {
 }
 
 const getById =()=>{
-  return receitasModel.findById(id)
+  return receitasModel.findById(Id)
 
 }
 const add = (receitas) => {
