@@ -34,7 +34,7 @@ servidor.get('/receitas', async (request, response) => {
 })
 
 servidor.get('/receitas/:id', (request, response) => {
-  receitasController.getByid(request.params.id)
+  receitasController.getById(request.params.id)
     .then(receitas => {
       if(!receitas){
         response.sendStatus(404)
