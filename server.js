@@ -6,7 +6,7 @@ const servidor = express()
 const receitasController = require('./receitasController')
 const params = require('params')
 const parametrosPermitidos = require('./parametrosPermitidos')
-const PORT = 3038
+const PORT = process.env.PORT || 3038
 // const jwt = require('jsonwebtoken')
 const logger = (request, response, next) => {
   console.log(`${new Date().toISOString()} Request type: ${request.method} to ${request.originalUrl}`)
