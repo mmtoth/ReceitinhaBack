@@ -12,7 +12,7 @@ const getAll = () => {
   })
 }
 
-const getById =()=>{
+const getById =(Id)=>{
   return receitasModel.findById(Id)
 
 }
