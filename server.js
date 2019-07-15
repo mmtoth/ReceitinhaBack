@@ -34,8 +34,8 @@ servidor.get('/receitas', async (request, response) => {
 })
 
 servidor.get('/receitas/:Id', (request, response) => {
-  const receitasId = request.params.Id
-  receitasController.getById(receitasId)
+  //const receitasId = request.params.Id
+  receitasController.getById(request.params.id)
     .then(receitas => {
       if(!receitas){
         response.sendStatus(404)
