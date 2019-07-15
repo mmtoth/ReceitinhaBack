@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const MONGO_URL = process.env.MONGODB_URI;
 
 function connect () {
+  console.log(process.env.MONGODB_URI)
   mongoose.connect(MONGO_URL,
     { useNewUrlParser: true },
     function (error) {
